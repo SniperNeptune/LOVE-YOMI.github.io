@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+    <base href="http://yeyuni.com/biaobai_aixinjishi/" />
+	
+	<title>你好YOMI</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url("digital-7_mono.ttf") format("truetype");
+}
+</style>
+	<link href="css/default.css" tppabs="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+	<script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+	<body>
+<div id="mainDiv">
+<div id="content">
+      <div id="code"> <span class="comments"></span><br />
+    <span class="space"><span class="comments"></span></span><br />
+    <span class="space"/><span class="comments">当上帝未能将人类从死亡的黑暗中拯救，只遗赠给他们这特殊的光，这束光的火焰长久温暖着人们的手，并将他们彻底烧毁，把快乐变成孤独。</span><br />
+    <span class="space"/><span class="comments">我们称其为爱，这是我们唯一能想到的词。</span><br />
+    <span class="space"/><span class="comments">因为和你在一起，生命是一支甜蜜的舞蹈，一个漫长的吻，你的吻永不冷却。生命充满狂风骤雨，你眼中的光芒永远照亮我前行的路。我的心，那块滑稽的肌肉，那个稚气的圣人，那声叹息，在每一次见你时狂跳不止。与你同在的每一天，我们的内心深处都梦想着一种坚不可摧的爱，没有什么能让它碎成两半，流行歌曲和电影的大潮滋养并放大我们的梦想，在歌曲和电影里亲吻更深浓，它们的温度点燃平凡，让它熊熊燃烧，成为童话。</span><br /><br />
+    <span class="space"/><span class="comments">　　　　　　　　　　　　　　　　　　　　　　　　致独一无二 心灵手巧 说话圆滑 会打扮 聪明 唱歌好听 可爱 严谨细心 会做饭做家务照顾小动物 身高合适 热爱小动物有善心 灵魂有趣 知性大方 粘人我喜欢 经常发可爱的表情 有少女心 有时候傻傻的 有个性 喜欢看动漫 舒适感 眼睛里有星星 爱我 有才华会写小作文 写字好看的YOMI</span><br />
+  </div>
+      <div id="loveHeart">
+    <canvas id="garden"></canvas>
+    <div id="words">
+          <div id="messages"> 这是我们认识的第
+        <div id="elapseClock"></div>
+      </div>
+          <div id="loveu"> 永远爱你，一辈子，不分离！<br/>
+        <div class="signature">  -最爱你的人</div>
+      </div>
+        </div>
+  </div>
+      <div class="bg1">
+
+    </div>
+<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2023,03,01);
+		together.setHours(-720);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "提醒您：您的浏览器版本过旧^_^<br/>"+
+				"推荐使用 <a href='http://dlsw.br.baidu.com/ditui/zujian/bdBrowserSetup-5956-ftn_1000061134.exe' target='_blank'>百度浏览器<br/>请先升级您的浏览器，效果很炫哦~~"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+<audio id="main_audio" autoplay="autoplay" preload="auto" loop>
+	<source src="" type="audio/mpeg" />
+<embed id="main_audio_ie8" hidden="true" autostart="true" height="0" width=0 loop="true" src="" autoplay="autoplay"/>
+</audio>
+<div style="display:none"><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280799347'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1280799347%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></div></body>
+</html>
